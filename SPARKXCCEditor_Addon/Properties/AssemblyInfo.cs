@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("SPARKXCCEditor_Addon")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("SPARK SCC Editor")]
+[assembly: AssemblyDescription("Edit SCCs within M64MM3!")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SPARKXCCEditor_Addon")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCompany("Project Comet")]
+[assembly: AssemblyProduct("SPARK SCC Editor")]
+[assembly: AssemblyCopyright("Copyright © Project Comet 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
