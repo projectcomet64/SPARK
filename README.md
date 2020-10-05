@@ -1,4 +1,4 @@
-!()
+![SPARK Logo](https://github.com/projectcomet64/SPARK/blob/master/SPARKXCCEditor_Addon/Resources/sparkLOGO.png)
 
 # CometSPARK: Extended Color Code Editor for M64MM
 BECAUSE COLOR CODES JUST CANNOT BE RESTRICTED TO A SINGLE MODEL. NO SIR. TIME TO EXTEND THINGS FURTHEEEEEEEEER!!!<br>
