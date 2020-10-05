@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMTSpark", "SPARKXCCEditor_Addon\CMTSpark.csproj", "{AD69D033-EAA7-4197-9B92-9E7DCA1E6FA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD69D033-EAA7-4197-9B92-9E7DCA1E6FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD69D033-EAA7-4197-9B92-9E7DCA1E6FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD69D033-EAA7-4197-9B92-9E7DCA1E6FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD69D033-EAA7-4197-9B92-9E7DCA1E6FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04FD2973-572D-4DD0-B768-9CED8082D2FA}
+	EndGlobalSection
+EndGlobal
