@@ -56,7 +56,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(426, 18);
             this.label1.TabIndex = 1;
-            this.label1.Text = "CometSPARK: SPARK Color Code Editor for M64MM3 Alpha 1";
+            this.label1.Text = "CometSPARK: SPARK Color Code Editor for M64MM3 Alpha 2";
             // 
             // label2
             // 

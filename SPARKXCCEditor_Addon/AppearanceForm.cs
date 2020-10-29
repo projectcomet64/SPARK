@@ -188,7 +188,7 @@ namespace CMTSpark
 
         void LoadFromGame(object sender, EventArgs e)
         {
-            if ((!IsEmuOpen || BaseAddress == 0) && modelStatus != M64MM.Utils.Looks.ModelHeaderType.CLASSIC) return;
+            if ((!IsEmuOpen || BaseAddress == 0) && (modelStatus != ModelHeaderType.CLASSIC || modelStatus != ModelHeaderType.SPARK)) return;
             long seg04addr = SegmentedToVirtual(0x04000000, true);
             foreach (ColorPart cPart in xccDefaults)
             {
