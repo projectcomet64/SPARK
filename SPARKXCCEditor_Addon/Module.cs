@@ -77,7 +77,7 @@ namespace CMTSpark
 
         public void OnCoreEntAddressChange(uint addr)
         {
-            throw new NotImplementedException();
+
         }
     }
 }
