@@ -18,7 +18,7 @@ namespace CMTSpark
 
         public string Description => "X3 Mario (and future SPARK/X4 mods) now have Color Codes!";
 
-        public Image AddonIcon => Resources.spark_;
+        public Image AddonIcon => Resources.spark_512;
 
         public void Close(EventArgs e)
         {

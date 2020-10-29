@@ -83,6 +83,16 @@ namespace CMTSpark.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap spark_512 {
+            get {
+                object obj = ResourceManager.GetObject("spark_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap sparkLOGO {
             get {
                 object obj = ResourceManager.GetObject("sparkLOGO", resourceCulture);
