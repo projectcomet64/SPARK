@@ -13,12 +13,6 @@ namespace CMTSpark
     public static class Looks
     {
         public static List<int> shadowAddresses = new List<int>();
-        public enum ShadowParts
-        {
-            X,
-            Y,
-            Z
-        }
 
         public static void FromColorCode(string code, ref BindingList<ColorPart> cParts, byte shadeX, byte shadeY, byte shadeZ)
         {

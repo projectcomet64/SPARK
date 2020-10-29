@@ -36,12 +36,6 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="M64MM.Addon">
-      <HintPath>..\..\..\..\Desktop\M64MM3-a1h1\M64MM.Addon.dll</HintPath>
-    </Reference>
-    <Reference Include="M64MM.Utils">
-      <HintPath>..\..\..\..\Desktop\M64MM3-a1h1\M64MM.Utils.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -76,7 +70,6 @@
     </Compile>
     <Compile Include="Looks.cs" />
     <Compile Include="Module.cs" />
-    <Compile Include="Polyfills.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
@@ -118,6 +111,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\randomSlot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\M64MM\M64MM.Addon\M64MM.Addon.csproj">
+      <Project>{3e9dd360-39a9-47cd-bd2c-2ca202a84b60}</Project>
+      <Name>M64MM.Addon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\M64MM\M64MM.Utils\M64MM.Utils.csproj">
+      <Project>{3587b41b-7005-49ce-a884-6986adc8ca01}</Project>
+      <Name>M64MM.Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

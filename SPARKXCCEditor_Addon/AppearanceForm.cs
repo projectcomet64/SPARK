@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using M64MM.Utils;
 using static M64MM.Utils.Core;
 using static CMTSpark.Looks;
-using System.Xml.Linq;
+using static M64MM.Utils.Looks;
 using CMTSpark.Properties;
 
 namespace CMTSpark
@@ -24,7 +24,7 @@ namespace CMTSpark
         public AppearanceForm()
         {
             InitializeComponent();
-            long s04addr = Polyfills.SegmentedToVirtual(0x04000000, false);
+            long s04addr = SegmentedToVirtual(0x04000000, false);
             foreach (ColorPart cpart in xccDefaults)
             {
                 cpart.light = cpart.default_light;
@@ -47,7 +47,7 @@ namespace CMTSpark
             senderButton.BackColor = colorDialog.Color;
             marioSprite.Refresh();
 
-            if ((!IsEmuOpen || BaseAddress == 0) && modelStatus != ModelStatus.VANILLA
+            if ((!IsEmuOpen || BaseAddress == 0) && (modelStatus != ModelHeaderType.CLASSIC || modelStatus != ModelHeaderType.SPARK)
                 && lbColors.SelectedItem == null) return;
 
             switch (senderButton.Name)
@@ -78,7 +78,7 @@ namespace CMTSpark
             colors_D[2] = cPart.dark.B;
             colors_D[3] = 0x0;
 
-            long seg04addr = Polyfills.SegmentedToVirtual(0x04000000, true);
+            long seg04addr = SegmentedToVirtual(0x04000000, true);
             WriteBytes(seg04addr + cPart.offset_86, SwapEndian(colors_L, 4));
             WriteBytes(seg04addr + cPart.offset_88, SwapEndian(colors_D, 4));
             
@@ -86,7 +86,7 @@ namespace CMTSpark
 
         void ApplyAllColors(bool defaults = false, bool refreshList = true)
         {
-            if ((!IsEmuOpen || BaseAddress == 0) && modelStatus != ModelStatus.VANILLA) return;
+            if ((!IsEmuOpen || BaseAddress == 0) && (modelStatus != ModelHeaderType.CLASSIC || modelStatus != ModelHeaderType.SPARK)) return;
             foreach (ColorPart cPart in xccDefaults)
             {
                 if (defaults)
@@ -188,8 +188,8 @@ namespace CMTSpark
 
         void LoadFromGame(object sender, EventArgs e)
         {
-            if ((!IsEmuOpen || BaseAddress == 0) && modelStatus != ModelStatus.VANILLA) return;
-            long seg04addr = Polyfills.SegmentedToVirtual(0x04000000, true);
+            if ((!IsEmuOpen || BaseAddress == 0) && modelStatus != M64MM.Utils.Looks.ModelHeaderType.CLASSIC) return;
+            long seg04addr = SegmentedToVirtual(0x04000000, true);
             foreach (ColorPart cPart in xccDefaults)
             {
                 byte[] colorData;

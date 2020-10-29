@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CMTSpark.Properties;
 using M64MM.Additions;
 
 namespace CMTSpark
@@ -12,9 +14,11 @@ namespace CMTSpark
 
         AppearanceForm af;
 
-        public string SafeName => "SPARK XCC Editor";
+        public string SafeName => "SPARK Color Code Editor";
 
-        public string Description => "X3 Mario (and future SPARK/X4 mods) now have Color Codes!)";
+        public string Description => "X3 Mario (and future SPARK/X4 mods) now have Color Codes!";
+
+        public Image AddonIcon => Resources.spark_;
 
         public void Close(EventArgs e)
         {
@@ -69,6 +73,11 @@ namespace CMTSpark
                     af.ExecuteRandomCC();
                 }
             }
+        }
+
+        public void OnCoreEntAddressChange(uint addr)
+        {
+            throw new NotImplementedException();
         }
     }
 }
